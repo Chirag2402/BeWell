@@ -1,0 +1,81 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px; 
+    box-shadow: 0px 12px 12px rgba(217, 217, 231, 0.3); 
+    background-color: #F2EAE2;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    padding: 0 20px; 
+    overflow: hidden; 
+}
+
+.Navbar{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.Navbar li{
+    color: #6B4226;
+    list-style: none;
+    padding: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.Navbar li:hover{
+    color: #4CAF50;
+}
+
+.logo img{
+    height: 95px;
+    width: auto;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 18px;
+}
+
+.buttons img{
+    height: 30px;
+    cursor: pointer;
+}
+
+@media(max-width: 1300px){
+    .Header {
+        padding: 5px 10px; /* Further reduce padding */
+      }
+
+      .Navbar{
+        gap: 0px;
+      }
+    
+      .Navbar li {
+        font-size: 14px; /* Further reduce font size */
+      }
+    
+      .logo img {
+        height: 60px; /* Further reduce logo size */
+      }
+
+      .buttons{
+        display: flex;
+            gap: 20px;
+            align-items: center;
+            padding-right: 6px;
+            padding-top: 8px;
+      }
+    
+      .buttons img {
+        height: 20px; /* Further reduce button image size */
+      }
+}

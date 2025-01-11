@@ -1,0 +1,60 @@
+.product-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid for dynamic cards */
+    gap:25px 60px; /* Reduced gap for better spacing */
+    margin: 20px auto; /* Center the container and add vertical space */
+
+    max-width: 1200px; /* Optional: Limit the maximum width of the container */
+   box-sizing: border-box; /* Ensures padding and borders are included in size calculations */
+}
+
+
+/* Individual Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 293px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-box input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 0.5px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search-box input:focus {
+    border-color: #6a1b9a;
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.5);
+  }
+
+    @media (max-width: 1300px) {
+        .product-cards-container {
+            display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 3px;
+                    margin: -10px auto;
+                    padding: 0px 8px;
+        }
+    
+        .card {
+            width: 100%; /* Cards take full width within the grid column */
+            box-shadow: none;
+        }
+
+        .search-box input {
+            width: 90%; /* Make the search input wider on small screens */
+        }
+    }
+

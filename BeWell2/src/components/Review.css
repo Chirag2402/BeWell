@@ -1,0 +1,89 @@
+/* General Container Styling */
+.review-container {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4d331f; /* Dark brown text for contrast */;
+    padding: 0px 150px;
+    padding-right: 200px;       
+}
+
+/* Header Section */
+.review-header {
+    background-color: #f3e4d9; /* Light brown shade for header */
+    padding: 10px 20px;
+    border-bottom: 2px solid #d2b48c; /* Medium brown border for separation */
+    border-radius: 10px;
+}
+
+.review-header h1 {
+    font-size: 2.5rem;
+    color: #6a4e23; /* Deeper brown for title */
+}
+
+.review-header p {
+    font-size: 1.2rem;
+    color: #8b5e34; /* Slightly lighter brown for subtitle */
+}
+
+/* Reviews Content */
+.review-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.review-card {
+    background-color: #fff; /* White for contrast with text */
+    border: 1px solid #d2b48c; /* Medium brown border */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #4d331f; /* Text color for visibility */
+}
+
+.review-author {
+    font-size: 0.9rem;
+    color: #8b5e34; /* Lighter brown for author */
+    font-style: italic;
+}
+
+@media (max-width: 1300px) {
+
+    .review-container {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    .review-header h1 {
+        font-size: 2rem; /* Reduce font size for header */
+    }
+
+    .review-header p {
+        font-size: 1rem; /* Reduce font size for subtitle */
+    }
+
+    .review-content {
+        grid-template-columns: 1fr; /* Display reviews in a single column */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+
+    .review-card {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .review-text {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    .review-author {
+        font-size: 0.8rem; /* Adjust author text size */
+    }
+}
+
+

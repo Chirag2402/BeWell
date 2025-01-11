@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+html, body {
+    overflow-x: hidden; /* Disables vertical scrolling */
+    height: 100%; /* Ensures the body takes full height */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px 80px;
+  }
+  

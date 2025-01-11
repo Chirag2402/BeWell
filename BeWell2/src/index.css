@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden; /* Disables vertical scrolling */
+    height: 100%; /* Ensures the body takes full height */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+}

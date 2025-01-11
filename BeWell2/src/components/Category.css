@@ -1,0 +1,83 @@
+/* Category Section Styling */
+
+.category-container {
+    padding: 20px 120px;
+    padding-top: 40px;
+    font-family: 'Josefin Sans', sans-serif; /* Elegant font for the category section */
+}
+
+.section-title {
+    font-family: 'Josefin Sans', sans-serif; /* Elegant font for the section title */
+    font-size: 40px; /* Large size for prominence */
+    text-align: center; /* Center-align the text */
+    color: #6B4226; /* Deep brown color for the title */
+    margin-bottom: 10px; /* Space below the title */
+    padding-bottom: 10px;
+}
+
+/* Category Navigation Bar Styling */
+.category-nav {
+    background-color: #F2EAE2; /* Brown background for the nav bar */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.category-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category-item {
+    color: #6a4e23; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: #efd0c1; /* Rusty brown for hover effect */
+    color: #6a4e23; 
+}
+
+/* Content Section Styling */
+.products-content {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6a4e23; /* Dark brown */
+}
+
+@media (max-width: 1300px) {
+    .section-title {
+      font-size: 30px; /* Reduce font size for smaller screens */
+      padding-top: 10px; /* Adjust padding */
+      margin-bottom: 0px; /* Reduce margin */
+    }
+  
+    .category-container {
+      padding: 0px 60px; /* Adjust padding */
+      padding-bottom: 10px;
+    }
+
+    .category-nav {
+      padding: 15px 0; /* Reduce padding */
+    }
+  
+    .category-list {
+      flex-direction: column; /* Stack categories vertically */
+      gap: 10px; /* Add spacing between items */
+    }
+  
+    .category-item {
+      font-size: 1rem; /* Reduce font size */
+      margin: 10px 0; /* Add vertical margin */
+      padding: 8px 10px; /* Adjust padding */
+    }
+  }
